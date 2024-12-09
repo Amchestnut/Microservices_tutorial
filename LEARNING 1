@@ -115,6 +115,10 @@ BITNO: strategije nasledjivanja:
         LOSE JE STO NE MOZEMO DA DOHVATAMO PERSON !!!
         osoba kao tabela ne postoji :(((
 
+Dodatno bitno:
+ - Ako imam bas puno razlicith klasa, razlicith medju sobom, nema bas smisla koristiti single table,
+   jer onda mi fazon imao 200 kolona, od kojih je za neku klasu, 190 kolona prazno (NULL)
+
 Problemi koje pazim:
 ako je JOINED: nemam diskriminator ni slucajno
 ako je SINGLE_TABLE: moram da imam diskriminator. Ali mi je ono "TABLE" zabranjeno, jer to je samo za rad sa TABLE_PER_CLASS:

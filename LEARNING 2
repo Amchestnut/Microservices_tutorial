@@ -4,4 +4,39 @@ Servis za usere ce imati komunikaciju sa notifikacija (kad se neko registruje u 
 servis za rezervacije ce takodje da salje neke notifikacije (uspesna rezervacija)
 +++ dodatni mejl za podsetnik 24h pred termin
 
-// 13.13 2. predavanja: https://learning.raf.edu.rs/mod/url/view.php?id=27282
+-----
+
+@Embeddable
+Stavljamo na "ADRESU", jer hocemo nekako da je embedujemo (ukljucimo) u OSOBU
+@Embedded
+Stavljamo tamo gde koristimo ovu adresu (u person)
+
+@Enumerated
+Za enume, ali necemo ordinal brojeve, nego ocemo stringove, pa pisemo:
+    @Enumerated(value=EnumType.STRING)
+
+-------
+
+ARHITEKTURA:
+Ovde bi trebalo da se naprave 2 servisa:
+    - zaposleni
+    - pacijenti
+
+jer oni imaju dosta razlicitih stvari, i nisu mnogo povezani jedan sa drugim
+
+---------
+
+MANY-TO-ONE relationship
+doktor moze imati vise pacijenata
+pacijent moze imati vise doktora
+
+PatientHasDoctor - medjutabela izmedju tih 2 tabela
+Mora da uzme primarne kljuceve iz PATIENT && DOCTOR
+
+stopped at: 40:30, LINK: https://learning.raf.edu.rs/mod/url/view.php?id=27282
+
+
+
+
+
+

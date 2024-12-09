@@ -19,7 +19,7 @@ import lombok.Setter;
 public class BaseEntity {
     // ovo je nesto sto svaka TABELA IMA, koja je bude nasledila !!!
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)     // auto - sam izaberi strategiju
     private Long id;
     private boolean deleted;
     private boolean active;  // da li je aktiviran user, ono sa EMAIl

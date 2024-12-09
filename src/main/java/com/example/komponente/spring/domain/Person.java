@@ -22,4 +22,9 @@ public abstract class Person extends BaseEntity {
     private String firstName;
     private String lastName;
     private String contactNumber;
+    @Embedded   // Ukljucujemo ovu adresu iz ADDRESS. Tamo imamo @Embeddable a ovde @Embedded
+    private Address address;
+//    @Enumerated   PO DEFAULTU, KORISTI ORDINAL, ja necu ordinal brojeve, nego vrednost koja je namapirana na taj brok
+    @Enumerated(value = EnumType.STRING)
+    private Status status;
 }
