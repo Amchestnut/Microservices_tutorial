@@ -1,0 +1,7 @@
+- Servis za zakazivanje
+komunikacija sa serverom za usere
+Servis za usere ce imati komunikaciju sa notifikacija (kad se neko registruje u sistem, salje se imejl (potvrdite registraciju)
+servis za rezervacije ce takodje da salje neke notifikacije (uspesna rezervacija)
++++ dodatni mejl za podsetnik 24h pred termin
+
+// 13.13 2. predavanja: https://learning.raf.edu.rs/mod/url/view.php?id=27282
